@@ -1,7 +1,7 @@
 import serial
 import paho.mqtt.client as mqtt
 from datetime import datetime
-import time  # Import the time module
+import time 
 
 # Serial port configuration
 serial_port = 'COM7'
@@ -29,7 +29,7 @@ ser = serial.Serial(serial_port, baud_rate)
 
 def publish_serial_data_to_mqtt():
     start_time = time.time()  # Record the start time
-    duration = 10 * 60  # Duration in seconds (10 minutes)
+    duration = 10 * 60  # (10 minutes)
     
     while True:
         current_time = time.time()  # Get the current time
